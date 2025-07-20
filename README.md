@@ -11,7 +11,7 @@ This app includes authentication, dynamic menu management, and a responsive layo
 git clone https://github.com/sodkun/cms-app.git
 cd cms-app
 npm install
-
+```
 
 ## Default Login
 
