@@ -4,7 +4,7 @@ import useAuthStore from '../stores/authStore'
 // Pages
 import Login from '../pages/Login'
 import Home from '../pages/Home'
-// import Settings from '../pages/Settings'
+import Settings from '../pages/Settings'
 
 const AppRoutes = () => {
   const { isAuthenticated } = useAuthStore()
@@ -27,12 +27,12 @@ const AppRoutes = () => {
             isAuthenticated ? <Home /> : <Navigate to="/login" replace />
           }
         />
-        {/* <Route
+        <Route
           path="/settings"
           element={
             isAuthenticated ? <Settings /> : <Navigate to="/login" replace />
           }
-        /> */}
+        />
 
         {/* Default redirect */}
         <Route path="*" element={<Navigate to="/" replace />} />
